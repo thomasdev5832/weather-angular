@@ -1,11 +1,14 @@
 .mycontainer {
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #00897B;
+    background-color: #009688;
 }
 
 .card {
+    min-width: 300px;
+    padding: 1em;
     -webkit-box-shadow: 3px 3px 35px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 35px -8px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 35px -8px rgba(0,0,0,0.75);
@@ -17,9 +20,33 @@
     outline: none;
     border: none;
     border-radius: 10px;
-    background-color: #26A69A;
+    background-color: #00796B;
     color: white;
 }
 ::placeholder {
     color: white;
  }
+
+ .search input:focus {
+    background-color: #016359d9;
+    border: .4em;
+ }
+
+ footer {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+ }
+
+ footer img:hover {
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    animation: gelatine 0.5s infinite;
+ }
+
+ @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }

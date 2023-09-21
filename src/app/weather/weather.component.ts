@@ -16,14 +16,27 @@ export class WeatherComponent implements OnInit {
   iconURL: string = '';
   city: string = 'Belo Horizonte';
   units: string = 'metric';
+  cityName: string = 'Belo Horizonte';
 
 
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit(): void {
-    this.weatherService.getWeather(this.city, this.units).subscribe({
+    this.getWeatherData(this.cityName);
+    this.cityName = ''; 
+  }
+
+  onSubmit() {
+    this.getWeatherData(this.cityName);
+    this.city = this.cityName;
+    this.cityName = '';
+  }
+
+  private getWeatherData(cityName: string) {
+    this.weatherService.getWeather(cityName, this.units)
+    .subscribe({
       next: (res) => {
-        console.log(res);
+        // console.log(res);
         this.myWeather = res;
         console.log(this.myWeather);
         this.temperature = this.myWeather.main.temp;

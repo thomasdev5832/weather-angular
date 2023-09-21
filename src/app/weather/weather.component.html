@@ -1,8 +1,8 @@
 
 <div class="mycontainer">
     <div class="search mt-3 mb-3">
-        <form action="">
-            <input class="p-2" type="text" placeholder="Search">
+        <form #form="ngForm" (submit)="onSubmit()">
+            <input class="p-2" type="text" placeholder="Search" name="cityName" [(ngModel)]="cityName">
         </form>
     </div>
     <div class="card text-white" style="max-width: 18rem;">
@@ -18,5 +18,8 @@
             <p class="card-text">Humidity: {{humidity}}%</p>
         </div>
     </div>
-
+    <footer>
+        <p class="mb-1">Made with ♥ by Gabriel Thome</p>
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" target=”_blank” class="icon" onclick="javascript:window.open('https://github.com/thomasdev5832')" />
+    </footer>
 </div>
