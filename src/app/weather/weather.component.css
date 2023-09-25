@@ -21,7 +21,7 @@
 
 .card h2 {
    font-weight: 400;
-   background: -webkit-linear-gradient(right, #ffffff, #b8b8b8);
+   background: -webkit-linear-gradient(left, #ff9a03, #7100d3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
