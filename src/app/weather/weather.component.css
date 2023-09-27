@@ -19,9 +19,14 @@
     border-color: grey;
     }
 
+.card h1 {
+   font-size: 56px;
+   font-weight: 200;
+}
+
 .card h2 {
    font-weight: 400;
-   background: -webkit-linear-gradient(left, #ff9a03, #7100d3);
+   background: -webkit-linear-gradient(right, #28AFA0, #aff27b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
