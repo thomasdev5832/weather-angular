@@ -9,6 +9,8 @@ import { WeatherService } from '../weather.service';
 export class WeatherComponent implements OnInit {
   myWeather: any;
   temperature: number = 0;
+  maxTemp: number = 0;
+  minTemp: number = 0;
   feelsLikeTemp: number = 0;
   humidity: number = 0;
   pressure: number = 0;
@@ -17,6 +19,9 @@ export class WeatherComponent implements OnInit {
   city: string = 'Belo Horizonte';
   units: string = 'metric';
   cityName: string = 'Belo Horizonte';
+  windDegre: number = 0;
+  speedWind: number = 0;
+  
 
 
   constructor(private weatherService: WeatherService) {}
@@ -44,6 +49,10 @@ export class WeatherComponent implements OnInit {
         this.humidity = this.myWeather.main.humidity;
         this.pressure = this.myWeather.main.pressure;
         this.summary = this.myWeather.weather[0].main;
+        this.maxTemp = this.myWeather.main.temp_max;
+        this.minTemp = this.myWeather.main.temp_min;
+        this.speedWind = this.myWeather.wind.speed;
+        this.windDegre = this.myWeather.wind.deg;
         this.iconURL = 'https://openweathermap.org/img/wn/' + this.myWeather.weather[0].icon + '@2x.png'
       },
       error: (error) => console.log(error.message),

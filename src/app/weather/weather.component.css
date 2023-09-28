@@ -16,7 +16,7 @@
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: grey;
+    border-color: #aff27b;
     }
 
 .card h1 {
@@ -25,8 +25,9 @@
 }
 
 .card h2 {
+   font-size: 34px;
    font-weight: 400;
-   background: -webkit-linear-gradient(right, #28AFA0, #aff27b);
+   background: -webkit-linear-gradient(right, #5fdb00, #aff27b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -41,18 +42,18 @@
     border-width: 2px;
     border-style: solid;
     border-color: grey;
+    
 }
 ::placeholder {
     color: white;
  }
 
  .search input:focus {
-    background-color: #222327;
-    border: .4em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: grey;
- }
+   border-radius: 5px;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #aff27b;
+}
 
  footer {
     text-align: center;
