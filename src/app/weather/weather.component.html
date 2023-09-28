@@ -8,8 +8,8 @@
     <div class="card text-white" style="max-width: 18rem;">
         <div class="card-header text-center">
             <h2>{{city}}</h2>
-            <p><img src="{{iconURL}}" alt="weather image"></p>
-            <h1 class="card-text">{{temperature}} C°</h1>
+            <p><img class="icon-weather" src="{{iconURL}}" alt="weather image"></p>
+            <h1 class="card-text">{{temperature}}°C</h1>
         </div>
         
         <div class="card-body">
@@ -17,14 +17,18 @@
             <p class="card-text">Feels like: {{feelsLikeTemp}} C°</p>
             <p class="card-text">Pressure: {{pressure}} hPa</p>
             <p class="card-text">Humidity: {{humidity}}%</p>
+            
+            <!--
             <p class="card-text">Max Temp: {{maxTemp}}</p>
             <p class="card-text">Min Temp: {{minTemp}}</p>
+            
             <p class="card-text">Wind Degree: {{windDegre}}º</p>
             <p class="card-text">Wind Speed: {{speedWind}} M/h</p>
+            --> 
         </div>
     </div>
     <footer>
-        <p class="mb-1">Made with ♥ by Gabriel Thome</p>
+        <p class="mb-1">Made with ♥ by <span  target=”_blank” onclick="javascript:window.open('https://gabrielthome.netlify.app')" >Gabriel Thome</span></p>
         <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" target=”_blank” class="icon" onclick="javascript:window.open('https://github.com/thomasdev5832')" />
     </footer>
 </div>
