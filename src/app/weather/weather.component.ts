@@ -21,8 +21,9 @@ export class WeatherComponent implements OnInit {
   cityName: string = 'Belo Horizonte';
   windDegre: number = 0;
   speedWind: number = 0;
-  
 
+  hours = Date.now();
+  today = Date.now();
 
   constructor(private weatherService: WeatherService) {}
 

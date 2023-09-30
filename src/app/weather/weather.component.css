@@ -22,7 +22,12 @@
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
-   
+}
+
+.card h1 {
+   margin-top: -30px;
+   font-size: 64px;
+   font-weight: 200;
 }
 
 .card h2 {
@@ -34,13 +39,12 @@
   -webkit-text-fill-color: transparent;
 }
 
-.icon-weather {
+.card h3 {
+   font-size: 36px;
+   font-weight: 200;
 }
 
-.card h1 {
-   margin-top: -30px;
-   font-size: 64px;
-   font-weight: 200;
+.icon-weather {
 }
 
 .search input {

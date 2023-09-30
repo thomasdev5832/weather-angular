@@ -26,6 +26,11 @@
             <p class="card-text">Wind Speed: {{speedWind}} M/h</p>
             --> 
         </div>
+        
+    </div>
+    <div class="card text-white text-center" style="margin-top: 1em;">
+        <h3>{{ hours | date: "shortTime" }}</h3>
+        <p>{{ today | date: "fullDate" }}</p>
     </div>
     <footer>
         <p class="mb-1">Made with ♥ by <span  target=”_blank” onclick="javascript:window.open('https://gabrielthome.netlify.app')" >Gabriel Thome</span></p>
